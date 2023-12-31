@@ -1,0 +1,80 @@
+@import "./reset.css";
+@import "./mobile.css";
+
+@font-face{
+    font-family: IntegralCF-Bold;
+    src: url("../fonts/IntegralCF-DemiBold.ttf");
+}
+
+@font-face{
+    font-family: Satoshi-Bold;
+    src: url("../fonts/Satoshi-Bold.otf");
+}
+
+@font-face{
+    font-family: Satoshi-Medium;
+    src: url("../fonts/Satoshi-Medium.otf");
+}
+
+@font-face{
+    font-family: Satoshi-Regular;
+    src: url("../fonts/Satoshi-Regular.otf");
+}
+
+.container{
+    margin: 0 auto;
+    width: 1240px;
+    padding: 0px 100px;
+}
+
+.discount{
+    width: 100%;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+}
+
+.discount-article{
+    display: flex;
+    justify-content: center;
+}
+
+.regular{
+    font-family: Satoshi-Regular;
+}
+
+.medium{
+    cursor: pointer;
+    font-family: Satoshi-Medium;
+    text-decoration: underline;
+}
+
+.cross{
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    right: 100px;
+    z-index: 2;
+}
+
+/* Header strat*/
+
+.header{
+
+}
+
+.title{
+    width: fit-content;
+    height: fit-content;
+    font-family: IntegralCF-Bold;
+    font-size: 32px;
+}
+
+.nav-item.before-icon::after{
+    content: url("../images/icons/arrow_down.svg");
+}
+
+/* Header end*/

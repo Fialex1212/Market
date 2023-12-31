@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% for product in obj %}
+        <h1>{{ product.title }}</h1>
+        <p>{{ product.img }}</p>
+        <img src="{{ product.img }}" alt="{{ product.title }}">
+    {% endfor %}
+</body>
+</html>
