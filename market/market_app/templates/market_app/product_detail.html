@@ -5,10 +5,9 @@
     <title>Title</title>
 </head>
 <body>
-    {% for product in obj %}
-        <h1>{{ product.title }}</h1>
-        <p>{{ product.img }}</p>
-        <img src="{{ product.img }}" alt="{{ product.title }}">
+    {% for info in product %}
+        <h1>{{ info.title }}</h1>
+        <p>{{ info.img }}</p>
     {% endfor %}
 </body>
 </html>
