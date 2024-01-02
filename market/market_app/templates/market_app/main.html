@@ -2,10 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    link
+    <title>main</title>
 </head>
 <body>
-    asdfasdf
+    <h1>Main page</h1>
+    <br>
+    <br>
+    <br>
+    <form method="post" action="{% url 'main' %}">
+        {% csrf_token %}
+        <h3>If you want to get a discount code enter your email</h3>
+        <input type="text" name="message-email" placeholder="Enter your email"><br><br>
+        <input type="submit">
+    </form>
 </body>
 </html>
